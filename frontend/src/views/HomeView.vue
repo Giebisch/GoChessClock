@@ -5,6 +5,7 @@ import Player from "@/components/Player.vue";
 import { onMounted, reactive } from "vue";
 
 import { StartStopGame, EndRound } from "../../wailsjs/go/main/GameData.js" 
+import { EventsOn } from "../../wailsjs/runtime/runtime.js"
 
 const { t } = useI18n();
 
@@ -15,7 +16,7 @@ const data = reactive({
   game_status: t("game.start"),
 })
 
-window.runtime.EventsOn("game_data", (res) => {
+EventsOn("game_data", (res) => {
   data.game_data = res
   data.player1 = res["Players"][0]
   data.player2 = res["Players"][1]

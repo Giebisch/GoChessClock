@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps<{
-  player: Object;
+  player: any;
 }>();
 </script>
 
