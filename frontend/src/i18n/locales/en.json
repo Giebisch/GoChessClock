@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "Home",
+    "statistics": "Statistics"
+  },
+  "languages": {
+    "en": "English",
+    "de": "German"
+  },
+  "game": {
+    "start": "Start Game",
+    "startNew": "Start New Game",
+    "restart": "Cancel"
+  }
+}
